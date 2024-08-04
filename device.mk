@@ -48,7 +48,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     librmnetctl \
     libxml2 \
-    secril_config_svc
+    secril_config_svc \
+    sehradiomanager
 
 # Inherit from gta4l-common
 $(call inherit-product, device/samsung/gta4l-common/gta4l.mk)
