@@ -24,29 +24,9 @@ $(call inherit-product, device/samsung/gta4l/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Matrixx
-MATRIXX_BUILD_TYPE := Unofficial
-MATRIXX_MAINTAINER := Aryan
-MATRIXX_CHIPSET := SM6115
-MATRIXX_BATTERY := 7040mAh
-MATRIXX_DISPLAY := 1200x2000
-WITH_GMS := false
-
-# RisingOS Flags
-RISING_CHIPSET := Snapdragon 662
-RISING_MAINTAINER := Aryan
-RISING_PACKAGE_TYPE := VANILLA_AOSP
-PRODUCT_NO_CAMERA := false
-TARGET_SHIPS_MATLOG := false
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_CHIPSET="Snapdragon® 662" \
-    RISING_MAINTAINER="Aryan" \
-    RISING_DEVICE="gta4lwifi"
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta4l
-PRODUCT_NAME := lineage_gta4l
+PRODUCT_NAME := statix_gta4l
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T505
 PRODUCT_MANUFACTURER := samsung
